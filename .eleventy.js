@@ -44,11 +44,7 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  });
+  })
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides

@@ -1,15 +1,15 @@
 {
-  "title": "John Doe",
-  "url": "https://myurl.com/",
-  "description": "Photographer and Web Designer",
+  "title": "Jared Sprague",
+  "url": "https://jaredsprague.com/",
+  "description": "Jared Sprague's personal website",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "This is my personal log of projects, talks, and stuff that interests me",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://jaredsprague.com/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Jared Sprague",
+    "email": "jared@jaredsprague.com"
   }
 }
