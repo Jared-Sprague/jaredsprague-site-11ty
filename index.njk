@@ -2,9 +2,9 @@
 layout: layouts/home.njk
 fa-icon: 'fa-home'
 eleventyNavigation:
-key: Home
-order: 1
-url: /#
+  key: Home
+  order: 1
+  url: /#
 ---
 
 <!-- Heading -->
@@ -14,24 +14,10 @@ url: /#
 </header>
 
 <!-- Portfolio Section -->
-<div class="w3-padding-64 w3-content" id="photos">
-  <h2 class="w3-text-light-grey">My Photos</h2>
-  <hr style="width:200px" class="w3-opacity">
+<div class="w3-padding-64 w3-content" id="posts">
 
-  <!-- Grid for photos -->
+  <!-- Grid for posts -->
   <div class="w3-row-padding" style="margin:0 -16px">
-
-    {# <div class="w3-half">
-    {% for post in collections.photo | head(-8) %}
-      {% if loop.index==4 %}
-      </div><div class="w3-half">
-      {% endif %}
-        <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%" > </a>
-
-    {% endfor %}
-
-    </div>
-    #}
 
     <style>
       .row {

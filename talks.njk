@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+permalink: /talks/
+eleventyNavigation:
+  key: Talks
+  order: 3
+---
+
+<h1>Talks</h1>
+
+{% set postslist = collections.talks %}
+{% include "postslist.njk" %}

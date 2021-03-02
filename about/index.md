@@ -5,7 +5,7 @@ permalink: false
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
-  order: 2
+  order: 4
   url: /#about
 ---
 
