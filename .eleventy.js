@@ -38,7 +38,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("css");
+
+  // Personal directories
   eleventyConfig.addPassthroughCopy("experiments");
+  eleventyConfig.addPassthroughCopy("fish-game");
+  eleventyConfig.addPassthroughCopy("ld40");
+  eleventyConfig.addPassthroughCopy("ransom");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
