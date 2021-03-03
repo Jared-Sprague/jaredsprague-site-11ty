@@ -44,6 +44,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fish-game");
   eleventyConfig.addPassthroughCopy("ld40");
   eleventyConfig.addPassthroughCopy("ransom");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
