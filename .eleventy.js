@@ -35,16 +35,16 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
+  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("css");
 
-  // Personal directories
+  // Personal directories and files
   eleventyConfig.addPassthroughCopy("experiments");
   eleventyConfig.addPassthroughCopy("fish-game");
   eleventyConfig.addPassthroughCopy("ld40");
   eleventyConfig.addPassthroughCopy("ransom");
-  eleventyConfig.addPassthroughCopy("CNAME");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
