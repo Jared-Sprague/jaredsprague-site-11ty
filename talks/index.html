@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jared Sprague</title>
+    <meta name="Description" content="Jared Sprague&#39;s personal website">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml"
+          title="Jared Sprague">
+    <link rel="stylesheet" href="/css/prism.css">
+    <script>
+        function showMenu() {
+            var x = document.getElementById("mobileNav");
+            if (x.className.indexOf("w3-show") === -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function hideMenu() {
+            var x = document.getElementById("mobileNav");
+            if (x.className.indexOf("w3-hide") === -1) {
+                x.className += " w3-hide";
+            } else {
+                x.className = x.className.replace(" w3-hide", "");
+            }
+        }
+    </script>
+</head>
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens TODO add back in*/
+    
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    
+
+
+</style>
+<body class="w3-black">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="/img/jared_sprague_pirate_sm.jpg" style="width:100%">
+
+        <a href="/#"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+
+        <a href="/#posts"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-file-text w3-xxlarge"></i>
+            <p>Posts</p>
+        </a>
+
+        <a href="/projects/"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-rocket w3-xxlarge"></i>
+            <p>Projects</p>
+        </a>
+
+        <a href="/talks/"
+           class="w3-bar-item w3-button w3-padding-large  w3-black ">
+            <i class="fa fa-microphone w3-xxlarge"></i>
+            <p>Talks</p>
+        </a>
+
+        <a href="/#about"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>About</p>
+        </a>
+
+        <a href="/#contact"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contact</p>
+        </a>
+
+        <a href="/archive/"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-archive w3-xxlarge"></i>
+            <p>Archive</p>
+        </a>
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-bar w3-black w3-hide-large w3-hide-medium" id="myNavbar">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+       onclick="showMenu()">&#9776;</a>
+    <div class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" id="mobileNav">
+            <a href="/#" class="w3-bar-item w3-button" onclick="hideMenu()">Home</a>
+            <a href="/#posts" class="w3-bar-item w3-button" onclick="hideMenu()">Posts</a>
+            <a href="/projects/" class="w3-bar-item w3-button" onclick="hideMenu()">Projects</a>
+            <a href="/talks/" class="w3-bar-item w3-button" onclick="hideMenu()">Talks</a>
+            <a href="/#about" class="w3-bar-item w3-button" onclick="hideMenu()">About</a>
+            <a href="/#contact" class="w3-bar-item w3-button" onclick="hideMenu()">Contact</a>
+            <a href="/archive/" class="w3-bar-item w3-button" onclick="hideMenu()">Archive</a>
+    </div>
+</div>
+<div class="w3-padding-large" id="main">
+
+    <main  class="tmpl-home">
+        
+<h1>Talks</h1>
+
+
+<ol reversed class="postlist" style="counter-reset: start-from NaN">
+
+</ol>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge">
+        <a href="https://github.com/Jared-Sprague"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/caramelcode"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.twitch.tv/kamiza"><i class="fa fa-twitch w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/jared.sprague"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/jaredsprague/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <!-- End footer -->
+    </footer>
+
+    <!-- Current page: /talks/ -->
+</body>
+</html>

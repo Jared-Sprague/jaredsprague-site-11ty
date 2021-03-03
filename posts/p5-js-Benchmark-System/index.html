@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p5.js Benchmark System</title>
+    <meta name="Description" content="Jared Sprague&#39;s personal website">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml"
+          title="Jared Sprague">
+    <link rel="stylesheet" href="/css/prism.css">
+    <script>
+        function showMenu() {
+            var x = document.getElementById("mobileNav");
+            if (x.className.indexOf("w3-show") === -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function hideMenu() {
+            var x = document.getElementById("mobileNav");
+            if (x.className.indexOf("w3-hide") === -1) {
+                x.className += " w3-hide";
+            } else {
+                x.className = x.className.replace(" w3-hide", "");
+            }
+        }
+    </script>
+</head>
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens TODO add back in*/
+    
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    
+
+
+</style>
+<body class="w3-black">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="/img/jared_sprague_pirate_sm.jpg" style="width:100%">
+
+        <a href="/#"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+
+        <a href="/#posts"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-file-text w3-xxlarge"></i>
+            <p>Posts</p>
+        </a>
+
+        <a href="/projects/"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-rocket w3-xxlarge"></i>
+            <p>Projects</p>
+        </a>
+
+        <a href="/talks/"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-microphone w3-xxlarge"></i>
+            <p>Talks</p>
+        </a>
+
+        <a href="/#about"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>About</p>
+        </a>
+
+        <a href="/#contact"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contact</p>
+        </a>
+
+        <a href="/archive/"
+           class="w3-bar-item w3-button w3-padding-large  w3-hover-black ">
+            <i class="fa fa-archive w3-xxlarge"></i>
+            <p>Archive</p>
+        </a>
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-bar w3-black w3-hide-large w3-hide-medium" id="myNavbar">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+       onclick="showMenu()">&#9776;</a>
+    <div class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" id="mobileNav">
+            <a href="/#" class="w3-bar-item w3-button" onclick="hideMenu()">Home</a>
+            <a href="/#posts" class="w3-bar-item w3-button" onclick="hideMenu()">Posts</a>
+            <a href="/projects/" class="w3-bar-item w3-button" onclick="hideMenu()">Projects</a>
+            <a href="/talks/" class="w3-bar-item w3-button" onclick="hideMenu()">Talks</a>
+            <a href="/#about" class="w3-bar-item w3-button" onclick="hideMenu()">About</a>
+            <a href="/#contact" class="w3-bar-item w3-button" onclick="hideMenu()">Contact</a>
+            <a href="/archive/" class="w3-bar-item w3-button" onclick="hideMenu()">Archive</a>
+    </div>
+</div>
+<div class="w3-padding-large" id="main">
+
+    <main  class="tmpl-post">
+        <div class="w3-content">
+<h1>p5.js Benchmark System</h1>
+
+<p><img src="/img/benchmark.jpg" alt="alt text" title="Code"></p>
+<p>I was browsing the open <a href="https://github.com/processing/p5.js/issues/1524">p5.js</a> issues when I stubbled across <a href="https://github.com/processing/p5.js/issues/1524">this one</a>. There was an open request to add performance benchmarking to the p5.js development tools, that would run benchmarks in multiple real browsers. The goal was to know when performance optimizations were really helping or adding unnecessary complexity.  That looked like a fun problem to work on.  Since performance testing is one thing I really love doing, I decided to take it on.  I learned A lot in the process.  This post explains the main parts of the of the system I put together,  using existing plugins.  It is copied from the <a href="https://github.com/processing/p5.js/wiki/Benchmarking-p5.js">article on the p5.js wiki</a> .</p>
+<h1>Benchmarking p5.js</h1>
+<p>We have a grunt task that runs performance benchmarks in multiple real browsers on the developers local machine. It will automatically detect which browsers are installed from the following list (Chrome, Firefox, Safari, Edge, IE) and run the benchmarks in all installed browsers and report the results.</p>
+<p>Our benchmarking system consists of 3 main components:</p>
+<ol>
+<li><a href="https://benchmarkjs.com/">Benchmark.js</a> - the engine that runs the benchmarks and the framework for defining benchmarks.</li>
+<li><a href="https://www.npmjs.com/package/karma-benchmark">karma-benchmark</a> - The karma plugin for launching and running the benchmarks in multiple real browsers.</li>
+<li><a href="https://www.npmjs.com/package/grunt-karma">grunt-karma</a> - The grunt plugin that allows us to define different karma configuations per grunt command.  This allows us to run single benchmarks or groups of benchmarks.</li>
+</ol>
+<h2>Basic instructions:</h2>
+<h3>Install the new dependancies</h3>
+<pre class="language-text"><code class="language-text">npm install</code></pre>
+<h3>Do a build, the benchmarks expect a local build of p5.js and p5.min.js</h3>
+<pre class="language-text"><code class="language-text">grunt</code></pre>
+<h3>Run a specific benchmark</h3>
+<pre class="language-text"><code class="language-text">grunt karma:<target_benchmark></code></pre>
+<h3>To run all the benchmarks</h3>
+<pre class="language-text"><code class="language-text">grunt karma</code></pre>
+<h3>Example</h3>
+<pre class="language-text"><code class="language-text">grunt karma:random-dev</code></pre>
+<p>Outputs:</p>
+<pre class="language-text"><code class="language-text">Chrome 62.0.3202 (Linux 0.0.0)<br>  p5 random() vs Math.random(): Math.random() at 95811115 ops/sec (1.26x faster than p5 random())<br>Firefox 56.0.0 (Fedora 0.0.0)<br>  p5 random() vs Math.random(): Math.random() at 2367566507 ops/sec (1.14x faster than p5 random())<br><br>Done, without errors.</code></pre>
+<h2>Adding new benchmarks</h2>
+<ol>
+<li>Create a new benchmark file at this path and name format:  bench/*.bench.js</li>
+<li>Write the benchmark here is documentation <a href="https://github.com/JamieMason/karma-benchmark/blob/master/README.md">karma-benchmark</a></li>
+<li>Add the benchmark target to <code>grunt-karma.js</code></li>
+</ol>
+<h3>Example benchmark [random-fe-off.bench.js]</h3>
+<p>Here is an example benchmark that compares p5 random() to Math.random() with Friendly Error System disabled. It has two suites one for instanced mode and one using the global window random().</p>
+<pre class="language-js"><code class="language-js">p5<span class="token punctuation">.</span>disableFriendlyErrors <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span><br><br><span class="token keyword">var</span> p5Inst <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">p5</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">/**<br> *  Instance random() vs Math.random()<br> */</span><br><span class="token function">suite</span><span class="token punctuation">(</span><span class="token string">'Friendly Errors: OFF, Instance random() vs Math.random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token function">benchmark</span><span class="token punctuation">(</span><span class="token string">'Instance random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> p5Inst<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token function">benchmark</span><span class="token punctuation">(</span><span class="token string">'Math.random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><br><span class="token comment">/**<br> *  Window random() vs Math.random()<br> */</span><br><span class="token function">suite</span><span class="token punctuation">(</span><span class="token string">'Friendly Errors: OFF, Window random() vs Math.random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token function">benchmark</span><span class="token punctuation">(</span><span class="token string">'window random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token function">benchmark</span><span class="token punctuation">(</span><span class="token string">'Math.random()'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Then you would need to add your new benchmark to <code>grunt-karma.js</code></p>
+<pre class="language-text"><code class="language-text">'random-fe-off-dev': {<br>    options: {<br>      files: [<br>        'lib/p5.js',<br>        'bench/math/random-fe-off.bench.js'<br>      ]<br>    }<br>  }</code></pre>
+<p>Now you can run your new benchmark with:</p>
+<pre class="language-text"><code class="language-text">grunt karma:random-fe-off-dev</code></pre>
+<h2>Comparing Prod to Dev</h2>
+<p>karma-benchmark can load remote files.  So it's easy to include the p5.js prod build and compare it to the dev build.  This is important when you're working on improving performance to compare your changes to what is in production.   To do this simply make two targets in <code>grunt-karma.js</code> one for prod and one for dev.</p>
+<pre class="language-text"><code class="language-text">  'random-prod': {<br>    options: {<br>      files: [<br>        'https://cdnjs.cloudflare.com/ajax/libs/p5.js/<%= pkg.version %>/p5.js',<br>        'bench/random.bench.js',<br>      ],<br>    },<br>  },<br>  'random-dev': {<br>    options: {<br>      files: [<br>        'lib/p5.js',<br>        'bench/random.bench.js',<br>      ],<br>    },<br>  },</code></pre>
+<p>You can see that <code>random-prod</code> actually loads the latest build from CDN.  Then to compare you can run both targets using:</p>
+<pre class="language-text"><code class="language-text">grunt karma:random-prod karma:random-dev</code></pre>
+<h2>Notes</h2>
+<p>I chose to put the grunt-karma tasks in it's own file <code>grunt-karma.js</code>  instead of the main <code>Gruntfile.js</code>, because as we add more benchmarks overtime the file could grow quite long, and I wanted to keep the main Gruntfile clean.</p>
+
+
+<p><a href="/">← Home</a></p>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge">
+        <a href="https://github.com/Jared-Sprague"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/caramelcode"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.twitch.tv/kamiza"><i class="fa fa-twitch w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/jared.sprague"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/jaredsprague/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <!-- End footer -->
+    </footer>
+
+    <!-- Current page: /posts/p5-js-Benchmark-System/ -->
+</body>
+</html>
