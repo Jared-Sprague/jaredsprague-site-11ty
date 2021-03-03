@@ -76,8 +76,8 @@
     {%- for entry in collections.all | eleventyNavigation %}
 
         <a href="{{ entry.url | url }}"
-           class="w3-bar-item w3-button w3-padding-large {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
-            <i class="fa {{ navFA[entry.title] }} w3-xxlarge"></i>
+           class="w3-bar-item w3-button w3-padding-medium {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
+            <i class="fa {{ navFA[entry.title] }} w3-xlarge"></i>
             <p>{{ entry.title }}</p>
         </a>
 
