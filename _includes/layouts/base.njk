@@ -12,22 +12,11 @@
           title="{{ metadata.title }}">
     <link rel="stylesheet" href="/css/prism.css">
     <script>
-        function showMenu() {
-            var x = document.getElementById("mobileNav");
-            if (x.className.indexOf("w3-show") === -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
         }
-
-        function hideMenu() {
-            var x = document.getElementById("mobileNav");
-            if (x.className.indexOf("w3-hide") === -1) {
-                x.className += " w3-hide";
-            } else {
-                x.className = x.className.replace(" w3-hide", "");
-            }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
 </head>
@@ -54,21 +43,32 @@
     /* Remove margins from "page content" on small screens TODO add back in*/
     {% raw %}
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 992px) {
         #main {
             margin-left: 0
         }
     }
 
-    {% endraw %}
+    @media only screen and (min-height: 950px) {
+        #navIcon {
+            font-size: 36px !important
+        }
+    }
 
+    @media only screen and (max-height: 750px) {
+        #navIcon {
+            font-size: 10px !important
+        }
+    }
+
+    {% endraw %}
 
 </style>
 <body class="w3-black">
 
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<!-- Icon Bar (Sidebar - hidden on small and medium screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
     <!-- Avatar image in top left corner -->
     <img src="{{ '/img/jared_sprague_pirate_sm.jpg' | url }}" style="width:100%">
 
@@ -77,24 +77,24 @@
 
         <a href="{{ entry.url | url }}"
            class="w3-bar-item w3-button w3-padding-medium {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
-            <i class="fa {{ navFA[entry.title] }} w3-large"></i>
+            <i class="fa {{ navFA[entry.title] }} w3-large" id="navIcon"></i>
             <p>{{ entry.title }}</p>
         </a>
 
     {%- endfor %}
-
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-bar w3-black w3-hide-large w3-hide-medium" id="myNavbar">
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-       onclick="showMenu()">&#9776;</a>
-    <div class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" id="mobileNav">
-        {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}" class="w3-bar-item w3-button" onclick="hideMenu()">{{ entry.title }}</a>
-        {%- endfor %}
-    </div>
+<div class="w3-top w3-hide-large">
+    <button onclick="w3_open()" class="w3-bar-item w3-button w3-xlarge w3-left">☰</button>
 </div>
+<div class="w3-sidebar w3-bar-block w3-border-right w3-hide-large" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-xlarge w3-left w3-hide-large" onclick="w3_close()">Close &times;</button>
+    {%- for entry in collections.all | eleventyNavigation %}
+        <a href="{{ entry.url | url }}" class="w3-bar-item w3-button" onclick="w3_close()">{{ entry.title }}</a>
+    {%- endfor %}
+</div>
+
 <div class="w3-padding-large" id="main">
 
     <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
