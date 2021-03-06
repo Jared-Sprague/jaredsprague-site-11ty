@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -57,7 +58,7 @@
 
     @media only screen and (max-height: 750px) {
         #navIcon {
-            font-size: 10px !important
+            padding: 0px;
         }
     }
 
@@ -70,13 +71,13 @@
 <!-- Icon Bar (Sidebar - hidden on small and medium screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
     <!-- Avatar image in top left corner -->
-    <img src="{{ '/img/jared_sprague_pirate_sm.jpg' | url }}" style="width:100%; margin-bottom: 15px;">
+    <a href="/"><img src="{{ '/img/jared_sprague_pirate_sm.jpg' | url }}" style="width:100%"></a>
 
     {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
     {%- for entry in collections.all | eleventyNavigation %}
 
         <a href="{{ entry.url | url }}"
-           class="w3-bar-item w3-button w3-padding-medium {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
+           class="w3-bar-item w3-button {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
             <i class="fa {{ navFA[entry.title] }} w3-large" id="navIcon"></i>
             <p>{{ entry.title }}</p>
         </a>

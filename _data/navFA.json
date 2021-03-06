@@ -1,9 +1,8 @@
 {
-    "Home" : "fa-home",
+    "Games" : "fa-rocket",
+    "Projects": "fa-flask",
+    "Talks": "fa-microphone",
     "About" : "fa-user",
     "Contact" : "fa-envelope",
-    "Archive" : "fa-archive",
-    "Posts" : "fa-file-text",
-    "Projects": "fa-rocket",
-    "Talks": "fa-microphone"
+    "Blog" : "fa-file-text"
 }
