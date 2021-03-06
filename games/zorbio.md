@@ -1,7 +1,7 @@
 ---
 title: Zorbio
 date: 2021-03-01 18:39:18
-image: /img/zorbio.png
+image: /img/zorbio_thumb.png
 tags:
   - posts
   - games
