@@ -78,7 +78,7 @@
 		<link href="https://jaredsprague.com/games/zorbio/"/>
 		<updated>2021-03-01T18:39:18Z</updated>
 		<id>https://jaredsprague.com/games/zorbio/</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/zorbio.png&quot; alt=&quot;alt text&quot; title=&quot;Zorbio&quot; /&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/zorbio_thumb.png&quot; alt=&quot;alt text&quot; title=&quot;Zorbio&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;A multiplayer game made with Node.js and Three.js&lt;/p&gt;
 </content>
 	</entry>
