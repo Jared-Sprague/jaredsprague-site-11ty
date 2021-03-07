@@ -8,7 +8,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-![Zorbio](/img/zorbio_header.png)
+![Zorbio](/img/zorbio_header.png "Zorbio"){.post-image}
 
 A multiplayer game made with Node.js and Three.js
 
