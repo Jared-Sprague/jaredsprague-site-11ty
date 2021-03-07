@@ -3,6 +3,11 @@
     padding-bottom: 0px;
 }
 
+.post-image {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     padding: 0 12px 0;
 }
