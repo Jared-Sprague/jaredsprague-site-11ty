@@ -3,9 +3,21 @@
     padding-bottom: 0px;
 }
 
+#myNavbar {
+    z-index: 1000;
+}
+
 .post-image {
     max-width: 100%;
     height: auto;
+}
+
+.tmpl-post {
+    margin-top: 40px;
+}
+
+.tmpl-home {
+    margin-top: 40px;
 }
 
 .container {
