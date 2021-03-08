@@ -4,7 +4,7 @@
 
 ### Talks
 
-1. Future Stack
+1. [Done] Future Stack 2017
 2. All Things Open gaming #1
 3. ECGC Open Source game dev
 4. DevConf Brno
