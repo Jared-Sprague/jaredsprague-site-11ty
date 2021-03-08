@@ -13,6 +13,21 @@
 	</author>
 	
 	<entry>
+		<title>New Relic FutureStack 2017 New York</title>
+		<link href="https://jaredsprague.com/talks/FutureStack-2017/"/>
+		<updated>2017-07-13T18:39:18Z</updated>
+		<id>https://jaredsprague.com/talks/FutureStack-2017/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/FS17_Banner_V2.jpg&quot; alt=&quot;FutureStack 2017&quot; title=&quot;FutureStack 2017&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Talk Abstract&lt;/h2&gt;
+&lt;p&gt;Good user experience starts with digital experience monitoring. In this talk I go into why monitoring from the users point of view is critical for availability and user experience. Using Synthetic and Real User monitoring.&lt;/p&gt;
+&lt;h2&gt;Video&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tnMYZ7gryrU&quot;&gt;https://www.youtube.com/watch?v=tnMYZ7gryrU&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Download The Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jaredsprague.com/files/FS-deck-PDF.pdf&quot;&gt;Slides PDF&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>p5.js image zoom example</title>
 		<link href="https://jaredsprague.com/posts/p5-js-image-zoom-example/"/>
 		<updated>2017-10-26T23:26:55Z</updated>
