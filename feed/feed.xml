@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Jared Sprague</title>
-	<subtitle>This is my personal log of projects, talks, and stuff that interests me</subtitle>
+	<subtitle>This is my personal log of games, projects, talks, and stuff that interests me.</subtitle>
 	
 	<link href="https://jaredsprague.com/feed/feed.xml" rel="self"/>
 	<link href="https://jaredsprague.com/"/>
