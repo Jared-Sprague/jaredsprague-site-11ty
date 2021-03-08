@@ -92,22 +92,22 @@
         </url>
         
         <url>
-            <loc>https://jaredsprague.com/tags/projects/</loc>
-            <lastmod>2021-03-08</lastmod>
-        </url>
-        
-        <url>
             <loc>https://jaredsprague.com/tags/games/</loc>
             <lastmod>2021-03-08</lastmod>
         </url>
         
         <url>
-            <loc>https://jaredsprague.com/tags/experiments/</loc>
+            <loc>https://jaredsprague.com/tags/projects/</loc>
             <lastmod>2021-03-08</lastmod>
         </url>
         
         <url>
             <loc>https://jaredsprague.com/tags/talks/</loc>
+            <lastmod>2021-03-08</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://jaredsprague.com/tags/experiments/</loc>
             <lastmod>2021-03-08</lastmod>
         </url>
         
