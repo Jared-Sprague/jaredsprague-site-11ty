@@ -7,7 +7,7 @@ tags:
 - posts
 - talks
 ---
-![FutureStack 2017](/img/talks/FS17_Banner_V2.jpg "FutureStack 2017"){.post-image}
+![FutureStack 2017](/img/talks/FS17_browsyn.jpeg "FutureStack 2017"){.post-image}
 
 ## Talk Abstract
 
