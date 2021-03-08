@@ -6,9 +6,9 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml"
           title="{{ metadata.title }}">
     <link rel="stylesheet" href="/css/prism.css">
@@ -78,7 +78,7 @@
 
         <a href="{{ entry.url | url }}"
            class="w3-bar-item w3-button {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
-            <i class="fa {{ navFA[entry.title] }} w3-large" id="navIcon"></i>
+            <i class="fas {{ navFA[entry.title] }} w3-large" id="navIcon"></i>
             <p>{{ entry.title }}</p>
         </a>
 
@@ -104,11 +104,7 @@
 
     <!-- Footer -->
     <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge w3-center">
-        <a href="https://github.com/Jared-Sprague"><i class="fa fa-github w3-hover-opacity"></i></a>
-        <a href="https://twitter.com/caramelcode"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://www.twitch.tv/kamiza"><i class="fa fa-twitch w3-hover-opacity"></i></a>
-        <a href="https://www.facebook.com/jared.sprague"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/jaredsprague/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        {% include "social.njk" %}
         <!-- End footer -->
     </footer>
 

@@ -3,7 +3,7 @@
   "url": "https://jaredsprague.com/",
   "description": "Jared Sprague's personal website",
   "feed": {
-    "subtitle": "This is my personal log of projects, talks, and stuff that interests me",
+    "subtitle": "This is my personal log of games, projects, talks, and stuff that interests me.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://jaredsprague.com/"

@@ -6,14 +6,7 @@ layout: layouts/home.njk
 <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
   <h1 class="w3-jumbo"><span class="w3-hide-small">Hi I'm</span> {{ metadata.title }}.</h1>
   <p>Softare Engineer, Game Developer, Gem Cutter.</p>
-    <div class="w3-text-grey w3-xlarge">
-        <a href="https://twitter.com/caramelcode"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://github.com/Jared-Sprague"><i class="fa fa-github w3-hover-opacity"></i></a>
-        <a href="https://www.twitch.tv/kamiza"><i class="fa fa-twitch w3-hover-opacity"></i></a>
-        <a href="https://www.facebook.com/jared.sprague"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/jaredsprague/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        <!-- End footer -->
-    </div>
+  {% include "social.njk" %}
 </header>
 
 <!-- Games Section -->
@@ -87,9 +80,9 @@ layout: layouts/home.njk
   <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-        <a href="https://twitter.com/caramelcode"><p><i class="fa fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>@caramelcode</p></a>
-        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Raleigh, North Carolina, USA</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>jared@jaredsprague.com</p>
+        <a href="https://twitter.com/caramelcode"><p><i class="fab fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>@caramelcode</p></a>
+        <p><i class="fas fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>jared@jaredsprague.com</p>
+        <p><i class="fas fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Raleigh, North Carolina, USA</p>
     </div>
   <br>
 </div>
