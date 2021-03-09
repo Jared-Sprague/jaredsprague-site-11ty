@@ -28,6 +28,26 @@
 	</entry>
 	
 	<entry>
+		<title>OPEN SOURCE GAME DEVELOPMENT TOOLS 101</title>
+		<link href="https://jaredsprague.com/talks/AllThingsOpen-2017/"/>
+		<updated>2017-10-13T12:00:00Z</updated>
+		<id>https://jaredsprague.com/talks/AllThingsOpen-2017/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/ATO_2017_banner.jpg&quot; alt=&quot;All Things Open 2017&quot; title=&quot;All Things Open 2017&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I gave a talk at All Things Open 2017 about open source game development using &lt;a href=&quot;https://arcade.redhat.com/bash&quot;&gt;CLH Bash&lt;/a&gt;&lt;br /&gt;
+game as an example. The room was packed with standing room only, which made me very happy to see how interested people&lt;br /&gt;
+were on the topic!&lt;/p&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Game development is more accessible than ever. Open-source tools have been lovingly crafted that cover every medium of&lt;br /&gt;
+game development. Join us for a primer on open-source game development tools. Whether you&#39;re interested in game engines,&lt;br /&gt;
+graphics, audio, or all of the above, we&#39;ll introduce the tools available. You&#39;ll also learn about game jams, the&lt;br /&gt;
+perfect places to create your first games while meeting other game developers. Now, with your toolkit in hand and a game&lt;br /&gt;
+jam in sight, you&#39;re ready to start your gamedev journey.&lt;/p&gt;
+&lt;h2&gt;Download The Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jaredsprague.com/files/ATO-2017-open-source-game-dev-101.pdf&quot;&gt;Slides PDF&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>p5.js image zoom example</title>
 		<link href="https://jaredsprague.com/posts/p5-js-image-zoom-example/"/>
 		<updated>2017-10-26T23:26:55Z</updated>
