@@ -5,10 +5,10 @@
 ### Talks
 
 1. [Done] Future Stack 2017
-2. All Things Open gaming #1
+2. All Things Open gaming 2017?
 3. ECGC Open Source game dev
 4. DevConf Brno
-5. All THings Open Game Dev
+5. [Done] All THings Open Game Dev 2019
 
 ### Games
 
