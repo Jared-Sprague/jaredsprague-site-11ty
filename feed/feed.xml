@@ -89,6 +89,26 @@
 	</entry>
 	
 	<entry>
+		<title>COMMAND LINE HEROES ARCADE: A PRACTICAL GUIDE TO OPEN GAME DEVELOPMENT</title>
+		<link href="https://jaredsprague.com/talks/AllThingsOpen-2019/"/>
+		<updated>2019-10-13T12:00:00Z</updated>
+		<id>https://jaredsprague.com/talks/AllThingsOpen-2019/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/All-Things-Open-2019-banner-new.jpg&quot; alt=&quot;All Things Open 2019&quot; title=&quot;All Things Open 2019&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I gave a talk at All Things Open 2017 about open source game development using &lt;a href=&quot;https://arcade.redhat.com/bash&quot;&gt;CLH Bash&lt;/a&gt; game as an example.&lt;br /&gt;
+The room was packed with standing room only, which made me very happy to see how interested people were on the topic!&lt;/p&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;The command line and arcade games don’t mix, or do they? The Command Line Heroes podcast team set out to develop an arcade game based on the command line, which resulted in the “Command Line Heroes: Bash” arcade game, which has been played by thousands at open-source events around the country.&lt;/p&gt;
+&lt;p&gt;In this session, I will walk you through the full process of developing an open-source game from scratch using this game as an example. We’ll cover design topics such as inspiration, prototyping, balance and adding the “Fun Factor,” and take a deep dive into the technical details, including the development tools we used. Lastly, since allowing people to modify an artistic project can be tricky, we’ll talk about ways that contributors can add to your game.&lt;/p&gt;
+&lt;p&gt;After the talk you can play “Bash” and other open-source games on our retro arcade cabinets at the Open Jam booth.&lt;/p&gt;
+&lt;h2&gt;Download The Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jaredsprague.com/files/ATO-2019-OpenGameDev.pdf&quot;&gt;Slides PDF&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Pics&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/ATO_2019_action_1.jpg&quot; alt=&quot;Sign&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://jaredsprague.com/img/talks/ATO_2019_action_2.JPG&quot; alt=&quot;Speaking&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Zorbio</title>
 		<link href="https://jaredsprague.com/games/zorbio/"/>
 		<updated>2021-03-01T18:39:18Z</updated>
