@@ -18,7 +18,7 @@
 		<updated>2017-07-13T18:39:18Z</updated>
 		<id>https://jaredsprague.com/talks/FutureStack-2017/</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/FS17_browsyn.jpeg&quot; alt=&quot;FutureStack 2017&quot; title=&quot;FutureStack 2017&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Talk Abstract&lt;/h2&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Good user experience starts with digital experience monitoring. In this talk I go into why monitoring from the users point of view is critical for availability and user experience. Using Synthetic and Real User monitoring.&lt;/p&gt;
 &lt;h2&gt;Video&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tnMYZ7gryrU&quot;&gt;https://www.youtube.com/watch?v=tnMYZ7gryrU&lt;/a&gt;&lt;/p&gt;
@@ -105,6 +105,26 @@ jam in sight, you&#39;re ready to start your gamedev journey.&lt;/p&gt;
 &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;grunt karma:random-prod karma:random-dev&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Notes&lt;/h2&gt;
 &lt;p&gt;I chose to put the grunt-karma tasks in it&#39;s own file &lt;code&gt;grunt-karma.js&lt;/code&gt;  instead of the main &lt;code&gt;Gruntfile.js&lt;/code&gt;, because as we add more benchmarks overtime the file could grow quite long, and I wanted to keep the main Gruntfile clean.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Open Source Game Development Workshop</title>
+		<link href="https://jaredsprague.com/talks/ECGC-OpenSource-GameDev-Workshop/"/>
+		<updated>2018-04-17T12:00:00Z</updated>
+		<id>https://jaredsprague.com/talks/ECGC-OpenSource-GameDev-Workshop/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/ecgc_2018_banner.jpeg&quot; alt=&quot;Open Source Game Dev&quot; title=&quot;ECGC 2018&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://ecgconf.com/&quot;&gt;East Coast Game Conference&lt;/a&gt; was a lot of fun! Michael and I gave a 6-hour hands-on workshop&lt;br /&gt;
+where led the audience through building a game with entirely open-source gamedev tools.&lt;/p&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Join us for a workshop on game jams and open-source game development tools.&lt;/p&gt;
+&lt;p&gt;Open-source tools have been lovingly crafted that cover every medium of game development. Through a series of hands-on&lt;br /&gt;
+labs, we will introduce you to many of those tools, with a focus on using them for game jams.&lt;/p&gt;
+&lt;p&gt;Now, with your tools sharpened and a jam on the horizon, embark on your next #gamejam journey.&lt;/p&gt;
+&lt;h2&gt;Workshop Labs&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mwcz/openjamming-workshop&quot;&gt;Workshop Labs&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Pics&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/ecgc_2018_action_1.jpg&quot; alt=&quot;ECGC 2018&quot; title=&quot;ECGC 2018&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
