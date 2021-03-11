@@ -9,7 +9,7 @@ tags:
 ---
 ![FutureStack 2017](/img/talks/FS17_browsyn.jpeg "FutureStack 2017"){.post-image}
 
-## Talk Abstract
+## Abstract
 
 Good user experience starts with digital experience monitoring. In this talk I go into why monitoring from the users point of view is critical for availability and user experience. Using Synthetic and Real User monitoring.
 

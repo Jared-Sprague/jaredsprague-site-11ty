@@ -6,7 +6,7 @@
 
 1. [Done] Future Stack 2017
 2. [Done] All Things Open gaming 2017
-3. ECGC Open Source game dev
+3. [Done] ECGC Open Source game dev
 4. DevConf Brno
 5. [Done] All THings Open Game Dev 2019
 
