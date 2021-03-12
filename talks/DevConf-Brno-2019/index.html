@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holistic Monitoring DevConf Brno 2019</title>
+    <meta name="Description" content="Jared Sprague&#39;s personal website">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml"
+          title="Jared Sprague">
+    <link rel="stylesheet" href="/css/prism.css">
+</head>
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens TODO add back in*/
+    
+
+    @media only screen and (max-width: 992px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    @media only screen and (min-height: 950px) {
+        #navIcon {
+            font-size: 36px !important
+        }
+    }
+
+    @media only screen and (max-height: 750px) {
+        #navIcon {
+            padding: 0px;
+        }
+    }
+
+    
+
+</style>
+<body class="w3-black">
+
+
+<!-- Icon Bar (Sidebar - hidden on small and medium screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
+    <!-- Avatar image in top left corner -->
+    <a href="/"><img src="/img/jared_sprague_pirate_sm.jpg" style="width:100%"></a>
+
+        <a href="/games/"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-rocket w3-large" id="navIcon"></i>
+            <p>Games</p>
+        </a>
+
+        <a href="/projects/"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-flask w3-large" id="navIcon"></i>
+            <p>Projects</p>
+        </a>
+
+        <a href="/talks/"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-microphone w3-large" id="navIcon"></i>
+            <p>Talks</p>
+        </a>
+
+        <a href="/blog/"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-pen-nib w3-large" id="navIcon"></i>
+            <p>Blog</p>
+        </a>
+
+        <a href="/#about"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-user w3-large" id="navIcon"></i>
+            <p>About</p>
+        </a>
+
+        <a href="/#contact"
+           class="w3-bar-item w3-button  w3-hover-black ">
+            <i class="fas fa-envelope w3-large" id="navIcon"></i>
+            <p>Contact</p>
+        </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="/games" class="w3-bar-item w3-button" style="width:20% !important">Games</a>
+        <a href="/projects" class="w3-bar-item w3-button" style="width:20% !important">Projects</a>
+        <a href="/talks" class="w3-bar-item w3-button" style="width:20% !important">Talks</a>
+        <a href="/blog" class="w3-bar-item w3-button" style="width:20% !important">Blog</a>
+        <a href="/#about" class="w3-bar-item w3-button" style="width:20% !important">About</a>
+    </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+
+    <main  class="tmpl-post">
+        <div class="w3-content">
+<h1>Holistic Monitoring DevConf Brno 2019</h1>
+
+<p><img src="/img/talks/devconf_2019_banner.jpeg" alt="DevConf CZ 2019" title="DevConf CZ 2019" class="post-image"></p>
+<p>Adam and I had the opportunity to present our Holistic Monitoring strategy at <a href="https://www.devconf.info/cz/">DevConf</a> Brno in 2019. It was so much fun to present there and visit Europe for the first time. I felt very fortunate. It was also great to meet some good <a href="https://rhea.dev/articles/2019-01/devconf-cz-2019">friends</a> in person. I love DevConv, and I love Brno and hope I get to go again someday!</p>
+<h2>Abstract</h2>
+<p>There are many ways to monitor services, but monitoring with only one tool runs the risk of partial service coverage. To<br>
+solve this, the Red Hat DevOps team has developed a holistic monitoring strategy that encompasses the needs of each<br>
+service without leaving gaps. From web applications to APIs, or containers to bare metal appliances, our strategy takes<br>
+everything into account. In this session, you'll learn about the Red Hat DevOps monitoring strategy in detail. In<br>
+addition, you will discover the fallacy of origin-based availability monitoring, how to develop useful SLI/SLO’s, and<br>
+how to craft actionable alerts.</p>
+<h2>Download The Slides</h2>
+<p><a href="/files/DevConf_2019_Holistic_Monitoring.pdf">Slides PDF</a></p>
+<h2>Video</h2>
+<div id="EQukfR10BBU" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/EQukfR10BBU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h2>Pics</h2>
+<p><img src="/img/talks/devconf_2019_holistic_monitoring.png" alt="Holistic Monitoring DevConf CZ 2019" title="Holistic Monitoring" class="post-image"><br>
+<img src="/img/talks/devconf_2019_Jared_Sprague.jpeg" alt="Jared Sprague DevConf CZ 2019" title="Jared Sprague DevConf CZ 2019" class="post-image"><br>
+<img src="/img/talks/devconf_2019_action_2.jpg" alt="Brno" title="Brno" class="post-image"><br>
+<img src="/img/talks/devconf_2019_action_1.jpg" alt="Brno" title="Brno" class="post-image"></p>
+
+
+<p><a href="/">← Home</a></p>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge w3-center">
+        <div class="w3-text-grey w3-xlarge">
+    <a href="https://twitter.com/caramelcode"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/Jared-Sprague"><i class="fab fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.twitch.tv/kamiza"><i class="fab fa-twitch w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/jaredsprague/"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    <!-- End footer -->
+</div>
+
+        <!-- End footer -->
+    </footer>
+
+    <!-- Current page: /talks/DevConf-Brno-2019/ -->
+</div>
+</body>
+</html>

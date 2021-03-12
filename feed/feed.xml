@@ -129,6 +129,32 @@ labs, we will introduce you to many of those tools, with a focus on using them f
 	</entry>
 	
 	<entry>
+		<title>Holistic Monitoring DevConf Brno 2019</title>
+		<link href="https://jaredsprague.com/talks/DevConf-Brno-2019/"/>
+		<updated>2019-01-28T12:00:00Z</updated>
+		<id>https://jaredsprague.com/talks/DevConf-Brno-2019/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/devconf_2019_banner.jpeg&quot; alt=&quot;DevConf CZ 2019&quot; title=&quot;DevConf CZ 2019&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Adam and I had the opportunity to present our Holistic Monitoring strategy at &lt;a href=&quot;https://www.devconf.info/cz/&quot;&gt;DevConf&lt;/a&gt; Brno in 2019. It was so much fun to present there and visit Europe for the first time. I felt very fortunate. It was also great to meet some good &lt;a href=&quot;https://rhea.dev/articles/2019-01/devconf-cz-2019&quot;&gt;friends&lt;/a&gt; in person. I love DevConv, and I love Brno and hope I get to go again someday!&lt;/p&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;There are many ways to monitor services, but monitoring with only one tool runs the risk of partial service coverage. To&lt;br /&gt;
+solve this, the Red Hat DevOps team has developed a holistic monitoring strategy that encompasses the needs of each&lt;br /&gt;
+service without leaving gaps. From web applications to APIs, or containers to bare metal appliances, our strategy takes&lt;br /&gt;
+everything into account. In this session, you&#39;ll learn about the Red Hat DevOps monitoring strategy in detail. In&lt;br /&gt;
+addition, you will discover the fallacy of origin-based availability monitoring, how to develop useful SLI/SLO’s, and&lt;br /&gt;
+how to craft actionable alerts.&lt;/p&gt;
+&lt;h2&gt;Download The Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jaredsprague.com/files/DevConf_2019_Holistic_Monitoring.pdf&quot;&gt;Slides PDF&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Video&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/EQukfR10BBU&quot;&gt;https://youtu.be/EQukfR10BBU&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Pics&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://jaredsprague.com/img/talks/devconf_2019_holistic_monitoring.png&quot; alt=&quot;Holistic Monitoring DevConf CZ 2019&quot; title=&quot;Holistic Monitoring&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://jaredsprague.com/img/talks/devconf_2019_Jared_Sprague.jpeg&quot; alt=&quot;Jared Sprague DevConf CZ 2019&quot; title=&quot;Jared Sprague DevConf CZ 2019&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://jaredsprague.com/img/talks/devconf_2019_action_2.jpg&quot; alt=&quot;Brno&quot; title=&quot;Brno&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://jaredsprague.com/img/talks/devconf_2019_action_1.jpg&quot; alt=&quot;Brno&quot; title=&quot;Brno&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>COMMAND LINE HEROES ARCADE: A PRACTICAL GUIDE TO OPEN GAME DEVELOPMENT</title>
 		<link href="https://jaredsprague.com/talks/AllThingsOpen-2019/"/>
 		<updated>2019-10-13T12:00:00Z</updated>
