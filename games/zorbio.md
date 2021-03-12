@@ -10,6 +10,10 @@ layout: layouts/post.njk
 
 ![Zorbio](/img/zorbio_header.png "Zorbio"){.post-image}
 
+## Play
+
+[Zorb.io](https://zorb.io)
+
 A multiplayer game made with Node.js and Three.js
 
 
