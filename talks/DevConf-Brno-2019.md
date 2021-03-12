@@ -1,7 +1,7 @@
 ---
 title: "Holistic Monitoring DevConf Brno 2019"
 date: 2019-01-28 12:00:00
-image: /img/talks/ecgc_2018_thumb.jpeg
+image: /img/talks/devconf_2019_thumb.jpeg
 layout: layouts/post.njk
 tags:
 - posts
