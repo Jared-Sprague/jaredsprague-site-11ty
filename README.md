@@ -26,7 +26,7 @@
 ### Projects
 
 1. Open Jam
-2. arcade.redhat.com
+2. [Done] arcade.redhat.com
 3. CLH Arcade
 4. Red Hat Gaming CoP
 1. P5js benchmark
