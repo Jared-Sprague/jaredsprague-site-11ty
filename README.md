@@ -29,13 +29,12 @@
 2. [Done] arcade.redhat.com
 3. CLH Arcade
 4. Red Hat Gaming CoP
-1. P5js benchmark
-2. P5js image zoom
-3. arcade.redhat.com
-4. status page controller
-5. Gem cutting
-6. CLH Arcade Cabinets
-7. CLH Interview and Blog
-8. Auctioneer
+5. P5js benchmark
+6. P5js image zoom
+7. status page controller
+8. Gem cutting
+9. CLH Interview and Blog
+10. Auctioneer
+11. Minecraft Student
 
 
