@@ -5,7 +5,7 @@
 	
 	<link href="https://jaredsprague.com/feed/feed.xml" rel="self"/>
 	<link href="https://jaredsprague.com/"/>
-	<updated>2021-03-15T12:00:00Z</updated>
+	<updated>2023-03-31T12:00:00Z</updated>
 	<id>https://jaredsprague.com/</id>
 	<author>
 		<name>Jared Sprague</name>
@@ -196,6 +196,27 @@ The room was packed with standing room only, which made me very happy to see how
 &lt;p&gt;These clumniated into a collection and are now posted on &lt;a href=&quot;https://arcade.redhat.com/&quot;&gt;arcade.redhat.com&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;Our team wrote a blog post about the arcade on the official Red Hat Blog here:&lt;br /&gt;
 &lt;a href=&quot;https://www.redhat.com/en/blog/no-quarters-needed-red-hat-arcade-now-live&quot;&gt;No quarters needed: The Red Hat Arcade is now live!&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to build podman images that work on both Mac, Linux, and PI</title>
+		<link href="https://jaredsprague.com/blog/hack-day-mach-2023/"/>
+		<updated>2023-03-31T12:00:00Z</updated>
+		<id>https://jaredsprague.com/blog/hack-day-mach-2023/</id>
+		<content type="html">&lt;p&gt;Oh hack-day March 23 2023 Michael Clayton and I finished building a Mimir Image Builder&lt;br /&gt;
+POC which we had started earlier in the week.&lt;/p&gt;
+&lt;h2&gt;How to build podman images for Mac and Linux&lt;/h2&gt;
+&lt;p&gt;In order to build container images that will run on both mac and linux&lt;br /&gt;
+you need to use the podman build flags &lt;code&gt;--platform&lt;/code&gt; and &lt;code&gt;--manifest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example build:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;podman build --platform linux/amd64,linux/arm64 --manifest httpd-solr -f components/load/podman/Containerfile.httpd-solr .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example push:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;podman manifest push httpd-solr quay.io/offline/httpd-solr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You need to do this for both your base image, and your final image. The manifest builds a separate image for both platforms. And side benifit of using &lt;code&gt;--platform linx/amd64,linux/arm64&lt;/code&gt; is that you get a build that works on Mac, Linux, &lt;em&gt;and&lt;/em&gt; Rasperry PI!&lt;/p&gt;
+&lt;p&gt;NOTE! &lt;code&gt;qemu-user-static&lt;/code&gt; is a dependancy for this multi-platform build to work. Fortunately &lt;code&gt;podman&lt;/code&gt; comes bundled with this for Mac. But on you compiling linux host it needs to be installed with &lt;code&gt;sudo dnf install qemu-user-static&lt;/code&gt;, and RHEL intentianly does &lt;em&gt;not&lt;/em&gt; offer it as a package. We had to build using Fedora 37.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
